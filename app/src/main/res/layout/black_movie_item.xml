@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="2.5dp"
+    android:layout_marginEnd="2.5dp"
+    android:layout_marginTop="15dp"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/moviepicture"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_width="150dp"
+        tools:src="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/moviename"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/moviepicture"
+        app:layout_constraintStart_toStartOf="@id/moviepicture"
+        app:layout_constraintTop_toBottomOf="@id/moviepicture"
+        tools:text="Gardians of the galaxy  "
+        tools:textColor="@android:color/black" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@android:color/transparent"
+        android:numStars="5"
+        android:progressBackgroundTint="@android:color/darker_gray"
+        android:progressTint="@color/star"
+        android:secondaryProgressTint="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rateText"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moviename"
+        tools:rating="3.75" />
+
+    <TextView
+        android:id="@+id/rateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ratingBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ratingBar"
+        app:layout_constraintTop_toTopOf="@+id/ratingBar"
+        tools:text="7/10"
+        tools:textColor="@android:color/black" />
+</androidx.constraintlayout.widget.ConstraintLayout>

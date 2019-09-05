@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Movies</string>
+    <string name="Movies_API_Key" translatable="false">eb21205664da6f9c97fc2f0980dac647</string>
+    <string name="GoogleKey" translatable="false">AIzaSyDz4PRRZ2TKvo96veDmEZdr2m67BZ5ZVZ8</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="release_date">Release Date:</string>
+    <string name="upcoming">UpComing</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="popular">Popular</string>
+    <string name="search">search</string>
+    <string name="descover">Discover</string>
+    <string name="upcoming_in_cinema">UpComing In Cinema</string>
+    <string name="see_all">See All</string>
+    <string name="overview">OverView</string>
+    <string name="cast">Cast</string>
+    <string name="similar_movies">Similar Movies</string>
+
+</resources>
